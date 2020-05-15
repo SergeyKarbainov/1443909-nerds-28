@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Сергей Карбаинов](https://up.htmlacademy.ru/htmlcss/28/user/1443909).
-* Наставник: [Дмитрий Аверин](https://htmlacademy.ru/profile/id1061531).
+* Наставник: [Дмитрий Аверин!](https://htmlacademy.ru/profile/id1061531).
 
 ---
 
