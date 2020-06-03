@@ -1,9 +1,139 @@
-Папка для стилевых файлов.
+/* Variables */
 
---
+:root {
+--basic-gray: #EEEEEE;
+--basic-extra-gray: #E1E1E1;
+--basic-neutral: #EEEEEE;
+--basic-extra-light: #EEEEEE;
+--basic-white: #FFFFFF;
+--basic-red #FB565A;
+--basic-green #00CA74;
+--basic-orange #EFC849;
+--basic-black #000000;
+--basic-black #283136;
+--basic-black #444444;
+}
 
-Пример структуры файлов:
+/* Global */
 
-css/
-| - style.css
-| - [другие *.css файлы]
+body {
+min-width: 1460px;
+margin: 0;
+padding: 0;
+font-family: "Roboto", Arial, sans-serif;
+font-size: 16px;
+line-height: 24px;
+font-weight: 400;
+color: var (--basic-black)
+background-color: var(--basic-white);
+background-image: url("../img/bg.jpg");
+background-position: top center;
+background-repeat: no-repeat;
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Main navigation */
+
+.main-navigation {
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--basic-black);
+  text-transform: uppercase;
+  
+  background-color: transparent;
+}
+
+.main-navigation-wrapper {
+  background-color: var(--basic-gray);
+}
+
+/* Site Navigation */
+
+.site-navigation {
+  list-style: none;
+}
+
+.site-navigation-current a:not([href]) {
+  background-color: var(--basic-gray);
+}
+
+/* User navigation */
+
+.site-navigation a,
+.user-navigation a {
+  color: var(--basic-black);
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus {
+  background-color: var(--basic-extra-red);
+}
+
+/* Features */
+
+.features-list {
+list-style: none;
+}
+
+.features-item {
+text-align: center;
+}
+
+.features-item h2{
+font-size: 16px;
+line-height: 30px;
+}
+
+/* Button */
+
+.button {
+font: inherit;  
+ext-align: center;
+color: var(--basic-black);
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--basic-gray);
+  border: none;
+}
+
+.button:hover,
+.button:focus,
+.button:active {
+  background-color: var(--red);
+}
+
+/* Main footer */
+
+.main-footer {
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+  background-image: url("../img/pattern-dark.jpg");
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+
+.footer-contacts a {
+  color: var(--basic-white);
+ }
+
+/* Social button */
+
+.social-button {
+  color: inherit;
+}
+
+.social-button:hover,
+.social-button:focus {
+  background-color: var(--basic-white);
+}
+
+
