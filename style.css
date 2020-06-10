@@ -1,0 +1,189 @@
+/* Variables */
+
+:root {
+--basic-gray: #EEEEEE;
+--basic-extra-dark: #242424;
+--basic-dark: #aba9a7;
+--basic-neutral: #e5e5e5;
+--basic-extra-light: #f8f5f2;
+--basic-white: #FFFFFF;
+--basic-black: #000000;
+
+--special: #663d15;
+}
+
+/* Global */
+
+body {
+min-width: 1460px;
+margin: 0;
+padding: 0;
+font-family: "Roboto", Arial, sans-serif;
+font-size: 16px;
+line-height: 24px;
+font-weight: 400;
+color: var(--basic-black)
+background-color: var(--basic-white);
+background-image: url("../img/bg.jpg");
+background-position: top center;
+background-repeat: no-repeat;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Main header */
+.main-header {
+color: var(--basic-black);
+  background-color: var(--basic-gray);
+}
+
+/* Main navigation */
+
+.main-navigation {
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--basic-black);
+  background-color: var(--basic-gray);
+  text-transform: uppercase;
+  }
+
+.main-navigation-wrapper {
+  color: var(--basic-black);
+  background-color: var(--basic-gray);
+}
+
+/* Site Navigation */
+
+.site-navigation {
+  list-style: none;
+}
+
+.site-navigation-current a:not([href]) {
+  background-color: var(--basic-gray);
+}
+
+/* User navigation */
+
+.site-navigation a,
+.user-navigation a {
+  color: var(--basic-black);
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus {
+  background-color: var(--basic-extra-light);
+}
+
+.web-store h1 {
+  font-size: 55px;
+  line-height: 55px;
+ text-align: center;
+ color: var(--basic-black);
+ background-color: var(--basic-gray);
+}
+/* Main-maim */
+.main-maim {
+color: var(--basic-black);
+ background-color: var(--basic-white);
+}
+
+/* Features */
+
+.features-list {
+list-style: none;
+}
+
+.features-item {
+text-align: center;
+}
+
+.features-item h3{
+font-size: 24px;
+line-height: 30px;
+}
+  
+/* Advantages */
+
+.advantages legend {
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.advantages ul {
+  list-style: none;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.advantages-input-checkbox:hover + label,
+.advantages-input-checkbox:focus + label {
+  color: var(--special);
+}
+
+/* Button */
+
+.button {
+font: inherit;  
+ext-align: center;
+color: var(--basic-black);
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--basic-gray);
+  border: none;
+
+.button:hover,
+.button:focus,
+.button:active {
+  background-color: var(--basic-extra-light);
+}
+
+/* Main footer */
+
+.main-footer{
+color: var(--basic-black);
+  background-color: var(--basic-gray);
+}
+
+.stocks h2 {
+  font-size: 36px;
+line-height: 36px;
+  }
+
+.title {color: black;}
+p {font-size: 16px;
+line-height: 22px;
+}
+
+.footer-social {
+  text-align: center;
+}
+
+.footer-stocks {
+  text-align: center;
+}
+
+.footer-social ul {
+  list-style: none;
+}
+
+/* Social button */
+
+.social-button {
+  color: inherit;
+}
+
+.social-button:hover,
+.social-button:focus {
+  color: var(--basic-white);
+  background-color: var(--basic-gray);
+}
