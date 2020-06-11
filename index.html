@@ -67,34 +67,9 @@
     </li>
     </ul>
     </section>
-    <div class="index-columns">
-  <section class="feedback">
-   <h2>Напишите нам</h2>
-<form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
-<p class="feedback-item">
-<label for="appointment-name">Ваше имя:</label>
-<input id="appointment-name" type="text" name="name" placeholder="Имя Фамилия">
-</p>
-<p class="feedback-item">
-<label for="appointment-text of the letter">Текст письма:</label>
-<input id="appointment-text of the letter" type="text" name="text of the letter"
-placeholder="В свободной форме">
-</p>
-<p class="feedback-item">
-<label for="appointment-email">Ваш email:</label>
-<input id="appointment-email" type="email" name="Ваш email:" placeholder="email@example.com">
-</p>
-<button class="button" type="submit">Отправить</button>
-</form>
-</section>
-</div>
-</main>
+    </main>
 <footer class="page-footer main-footer">
 <div class="container">
-<section class="footer-stocks">
-  <h2>Давайте дружить, это выгодно!<h2>
-    <p class="title"> Скидка 10% для друзей из социальных сетей.</p>
-    </section>
 <section class="footer-social">
 <ul>
 <li>
@@ -123,7 +98,29 @@ placeholder="В свободной форме">
 </li>
 </ul>
 </section>
+<section class="footer-stocks">
+  <h2>Давайте дружить, это выгодно!<h2>
+    <p class="title"> Скидка 10% для друзей из социальных сетей.</p>
+    </section>
 </div>
     </footer>
-  </body>
+     <section class="modal">
+   <h2>Напишите нам</h2>
+<form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+<p>
+<label class="visually-hidden" for="appointment-name">Ваше имя:</label>
+<input class="feedback-appointment-name" id="appointment-name" type="text" name="name" placeholder="Имя Фамилия">
+</p>
+<p>
+<label class="visually-hidden" for="appointment-text of the letter">Текст письма:</label>
+<input class="feedback-appointment-text of the letter" id="appointment-text of the letter" type="text" name="text of the letter" placeholder="В свободной форме">
+</p>
+<p>
+<label class="visually-hidden" for="appointment-email">Ваш email:</label>
+<input class="feedback-appointment-email" id="appointment-email" type="email" name="Ваш email:" placeholder="email@example.com">
+</p>
+<button type="submit">Отправить</button>
+</form>
+</section>
+      </body>
 </html>
