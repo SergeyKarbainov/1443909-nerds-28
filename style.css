@@ -9,20 +9,20 @@
 --basic-white: #FFFFFF;
 --basic-black: #000000;
 
---special: #663d15;
+--special: #9A9090;
 }
 
 /* Global */
 
 body {
-min-width: 1440px;
+min-width: 1157px;
 margin: 0;
 padding: 0;
 font-family: "Roboto", Arial, sans-serif;
 font-size: 16px;
 line-height: 24px;
 font-weight: 400;
-color: var(--basic-black)
+color: var(--basic-black);
 background-color: var(--basic-white);
 background-image: url("../img/bg.jpg");
 background-position: top center;
@@ -42,6 +42,7 @@ img {
 .page {
 height: 100%;
 }
+
 .page-body {
   min-height: 100%;
   display: grid;
@@ -77,6 +78,7 @@ height: 100%;
   align-items: center;
    font-size: 16px;
   line-height: 30px;
+  font-weight: 500;
   color: var(--basic-black);
   background-color: var(--basic-gray);
   text-transform: uppercase;
@@ -118,7 +120,7 @@ height: 100%;
   width: 620px;
   margin: 0;
   padding: 0;
-   outline: 5px solid rgba(0, 255, 255, 0.3);
+  outline: 5px solid rgba(0, 255, 255, 0.3);
   outline-offset: -5px;
   list-style: none;
 }
@@ -171,7 +173,7 @@ color: var(--basic-black);
 
 /* Features */
 
-.features {
+ .features {
   margin-bottom: 80px;
   outline: 5px solid rgba(255, 0, 0 , 0.3);
 }
@@ -191,14 +193,64 @@ outline-offset: -5px;
 }
 
 .features-item h3{
+font-weight: 700;
 font-size: 24px;
 line-height: 30px;
+align-items: center;
+text-transform: uppercase;
 }
   
+.inner-title {color: black;}
+p {font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+}
+
  .feature-item p {
-  margin: 0 10px;
+margin: 0 10px;
 }
  
+ .order-red {
+color: var(--basic-white);
+font-weight: 500;
+font-size: 16px;
+line-height: 18px;
+background-color: #FB565A;
+}
+
+.order-red:hover,
+.order-red:focus {
+  color: var(--basic-white);
+  background-color: var(--special);
+}
+
+ .order-green {
+color: var(--basic-white);
+font-weight: 500;
+font-size: 16px;
+line-height: 18px;
+background-color: #00CA74;
+}
+
+.order-green:hover,
+.order-green:focus {
+  color: var(--basic-white);
+  background-color: var(--special);
+}
+
+.order-yellow {
+color: var(--basic-white);
+font-weight: 500;
+font-size: 16px;
+line-height: 18px;
+background-color: #EFC849;
+}
+
+.order-yellow:hover,
+.order-yellow:focus {
+  color: var(--basic-white);
+  background-color: var(--special);
+}
 /* Advantages */
 
 .advantages {
@@ -219,16 +271,18 @@ line-height: 30px;
 }
 
 .advantages legend {
-  margin-bottom: 15px;
-  font-size: 18px;
-  line-height: 30px;
-  text-transform: uppercase;
+margin-bottom: 15px;
+font-weight: 700;
+font-size: 18px;
+line-height: 30px;
+text-transform: uppercase;
 }
 
 .advantages ul {
   padding: 0;
   margin: ;
   list-style: none;
+  font-weight: 400;
   font-size: 16px;
   line-height: 19px;
 }
@@ -236,7 +290,6 @@ line-height: 30px;
 .advantages li {
   padding: 0px;
   margin: 15px;
-
 }
 
 .advantages-input-checkbox:hover + label,
@@ -247,9 +300,9 @@ line-height: 30px;
 /* Button */
 
 .button {
-font: inherit;  
-text-align: center;
-color: var(--basic-black);
+  font: inherit;
+  text-align: center;
+  color: var(--basic-black);
   vertical-align: middle;
   text-transform: uppercase;
   background-color: var(--basic-gray);
@@ -259,9 +312,8 @@ color: var(--basic-black);
 .button:hover,
 .button:focus,
 .button:active {
-  background-color: var(--basic-extra-light);
+  background-color: var(--special);
 }
-
 /* Catalog */
 
 .catalog {
@@ -358,9 +410,10 @@ line-height: 22px;
   outline-offset: -5px;
 }
 
-.modal-feedback h2 {
+.modal h2 {
   margin: 0;
   margin-bottom: 37px;
+  font-weight: 700;
   font-size: 45px;
   line-height: 53px;
 }
@@ -373,8 +426,18 @@ line-height: 22px;
 /* Feedback form */
 
 .feedback-form p {
+font-weight: 700;
+font-size: 16px;
+line-height: 18px;
   margin: 0;
   margin-bottom: 10px;
+}
+
+.feedback-common {
+font-weight: 400;
+font-size: 16px;
+line-height: 18px;
+background-color: var(--transparent);
 }
 
 .feedback-form input[type="Имя Фамилия"],
@@ -394,3 +457,5 @@ line-height: 22px;
 .feedback-form .feedback-help {
   margin: 15px 0;
 }
+
+
