@@ -1,6 +1,5 @@
 /* Variables */
 
-
 :root {
 --basic-gray: #EEEEEE;
 --basic-extra-dark: #242424;
@@ -64,7 +63,7 @@ height: 100%;
 /* Main header */
 
 .main-header {
-    margin-bottom: 70px; 
+  margin-bottom: 8px; 
   outline: 5px solid rgba(0, 255, 0, 0.3); 
   outline-offset: -5px;
   color: var(--basic-black);
@@ -74,7 +73,7 @@ height: 100%;
 /* Main navigation */
 
 .main-navigation {
-  display: flex-start;
+  display: flex;
   flex-direction: row;
   align-items: center;
    font-size: 16px;
@@ -86,8 +85,8 @@ height: 100%;
   }
 
 .main-navigation-wrapper {
-  width: 100%;
-  margin-bottom: 60px;
+    width: 100%;
+  margin-bottom: 8px;
   color: var(--basic-black);
   background-color: var(--basic-gray);
 }
@@ -98,7 +97,8 @@ height: 100%;
   width: 159px;
   height: 65px;
   outline: 5px solid rgba(255, 0, 0, 0.3);
-  outline-offset: -5px;}
+  outline-offset: -5px;
+  }
 
 /* Container */
 
@@ -108,18 +108,17 @@ height: 100%;
   padding: 0 10px;
 }
 
-.main-navigation-wrapper .container {
+.container .main-navigation-wrapper {
   display: flex;
   justify-content: space-between;
-  color: var(--basic-black);
-  background-color: var(--basic-gray);
 }
 
 /* Site Navigation */
 
 .site-navigation {
-  width: 620px;
-  margin: 0;
+  width: 438px;
+  margin-left: 200px;
+  margin-right: : 245px;
   padding: 0;
   outline: 5px solid rgba(0, 255, 255, 0.3);
   outline-offset: -5px;
@@ -201,8 +200,9 @@ align-items: center;
 text-transform: uppercase;
 }
   
-.inner-title {color: black;}
-p {font-weight: 400;
+p.inner-title {
+color: black;
+font-weight: 400;
 font-size: 16px;
 line-height: 24px;
 }
@@ -343,6 +343,9 @@ text-transform: uppercase;
 /* Main footer */
 
 .main-footer{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   padding: 60px 0;
   margin-top: 65px;
   color: var(--basic-black);
@@ -351,11 +354,12 @@ text-transform: uppercase;
   outline-offset: -5px;
 }
 
-.main-footer .container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+.container .main-footer-wrapper {
+  display: flex;
+  justify-content: space-around;
 }
 
+  
 .footer-stocks {
   margin-left: 140px;
   width: 660px;
@@ -370,8 +374,9 @@ line-height: 36px;
 margin: 0;
   }
 
-.title {color: black;}
-p {font-size: 16px;
+p.title {
+color: black;
+font-size: 16px;
 line-height: 22px;
 }
 
@@ -429,7 +434,7 @@ line-height: 22px;
 .feedback-form p {
 font-weight: 700;
 font-size: 16px;
-line-height: 18px;
+line-height: 16px;
   margin: 0;
   margin-bottom: 10px;
 }
