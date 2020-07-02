@@ -678,19 +678,13 @@ text-transform: uppercase;
   opacity: 0.4;
 }
 
-.advantages-input-checkbox:hover + label {
- color: #283136;
- mix-blend-mode: normal;
- opacity: 1;
-  }
-
-.advantages-input-checkbox:focus + label {
- color: #283136;
- mix-blend-mode: normal;
- opacity: 0.3;
+.advantages-input-checkbox + label:hover:before,
+.advantages-input-checkbox + label:hover:after {
+color: #4D4D4D;
+opacity: 1;
 }
 
-.advantages-input-checkbox:active + label {
+.advantages-input-checkbox:focus + label {
  color: #283136;
  mix-blend-mode: normal;
  opacity: 0.3;
@@ -705,7 +699,9 @@ text-transform: uppercase;
   height: 25px;
   opacity: 0.4;
   border: 4px solid #4D4D4D;
+  opacity: 0.4;
   border-radius: 50%;
+ 
 }
 
 .advantages-input-radio:checked + label::after {
@@ -715,28 +711,17 @@ text-transform: uppercase;
   left: -32px;
   width: 13px;
   height: 13px;
-  background-color: #000000;
-  opacity: 0.4;
   border-radius: 50%;
+  background: #4D4D4D;
+  opacity: 0.4;
 }
 
-.advantages-input-radio:hover + label {
+.advantages-input-radio + label:hover:before,
+.advantages-input-radio + label:hover:after {
   color: #4D4D4D;
-  opacity: 0.9;
+  opacity: 1;
   }
-
-.advantages-input-radio:focus + label {
-  color: #283136;
- mix-blend-mode: normal;
- opacity: 0.3;
-}
-
-.advantages-input-radio:active + label {
- color: #283136;
- mix-blend-mode: normal;
- opacity: 0.3;
-}
-
+  
 /* Button */
 
 .button {
@@ -1415,7 +1400,6 @@ box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 /* Modal */
 
 .modal {
-  display: none;
   position: fixed;
   top: 0;
   right: 0;
@@ -1477,6 +1461,16 @@ box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
   transform: rotate(-45deg);
 }
 
+.modal-close:hover:before, 
+.modal-close:hover:after {
+background: rgba(251, 86, 90, 1);
+ }
+  
+.modal-close:active:before, 
+.modal-close:active:after {
+background: rgba(251, 86, 90, 0.1);
+ }
+
 .modal-description{
 padding-top: 47px;
 margin-bottom: 10px;
@@ -1512,9 +1506,9 @@ width: 760px;
 min-height: 118px;
 }
 
-.feedback-form input[type="Ð˜Ð¼Ñ Ð¤Ð°Ð¼Ð¸Ð»Ð¸Ñ"],
+.feedback-form input[type="Ваше Имя"],
 .feedback-form input[type="email"],
-.feedback-form input[type="Ð’ ÑÐ²Ð¾Ð±Ð¾Ð´Ð½Ð¾Ð¹ Ñ„Ð¾Ñ€Ð¼Ðµ"] {
+.feedback-form input[type="Текст письма"] {
   font: inherit;
   color: var(--basic-black);
   text-transform: uppercase;
@@ -1550,13 +1544,13 @@ border-radius: 3px;
 padding: 17px 83px; 
 }
 
-.feedback-form .:hover,
-.feedback-form .button:focus {
+.feedback-form .button:hover {
  color: var(--basic-white);
  background: #E74246;
 }
 
 .feedback-form .button:active {
+color: rgb(255,255,255, 0.3);
 background: #D7373B;
 box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
  }
