@@ -26,8 +26,14 @@
         </ul>
         <div class="user-navigation">
           <a class="basket" href="пусто.html">Корзина</a>
-        </div>
-      </div>
+          </div>
+        <script type="text/javascript">
+          var link = document.querySelector(".basket");
+        link.addEventListener("click", function (evt) {evt.preventDefault();
+          console.basket("Клик по ссылке корзина");
+        });          
+        </script>
+       </div>
     </div>
   </nav>
 </header>
@@ -172,8 +178,8 @@
         ул. Б. Конюшенная, д. 19/8<br>
         </p>
       <p>тел. +7(812) 275-75-75</p>
-        <button type="submit" class="button button">Напишите нам</button>
-         </div>
+      <button href="#" class="button feedback">Напишите нам</button>
+ </div>
   <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A389cd194eb4d6e4af9f91c49a9a6c57b3cb507d7a401d0373e6f866df587bee3&amp;width=100%25&amp;height=416&amp;lang=ru_RU&amp;scroll=false"></script>
 </section>
 <div class="container">
@@ -221,26 +227,27 @@
       <p class="modal-description">Ваше имя:</p>
          <p>
          <label class="visually-hidden" for="appointment-name">Ваше имя:</label>
-        <input class="feedback-name" id="appointment-name" type="name" name="name" placeholder="Имя Фамилия">
+        <input class="feedback-name" id="appointment-name" type="letters" name="name" placeholder="Имя Фамилия"required>
       </p>
     </div>
     <div class="inner-column-right">
       <p class="modal-description">Ваш email:</p>
           <p>
          <label class="visually-hidden" for="appointment-email">Ваш email:</label>
-        <input class="feedback-email" id="appointment-email" type="email" name="Ваш email:" placeholder="email@example.com">
+        <input class="feedback-email" id="appointment-email" type="email" name="Ваш email:" placeholder="email@example.com" required>
       </p>
        </div>
     </div>
        <p class="modal-description-3">Текст письма:</p>
            <p>
          <label class="visually-hidden" for="appointment-text of the letter">Текст письма:</label>
-        <input class="feedback-text" id="appointment-text of the letter" type="text" name="text of the letter" placeholder="В свободной форме">
+        <input class="feedback-text" id="appointment-text of the letter" type="letter" name="letter" placeholder="В свободной форме" required>
       </p>
             <button type="submit" class="button button">Отправить</button>
     </form>
       <button class="modal-close" type="button" aria-label="Закрыть"></button>
   </div>
 </section>
+<script src="feedback.js"></script>
 </body>
 </html>
