@@ -1400,6 +1400,7 @@ box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 /* Modal */
 
 .modal {
+  display: none;
   position: fixed;
   top: 0;
   right: 0;
@@ -1412,6 +1413,15 @@ box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
   background-repeat: repeat;
   box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
   }
+
+.modal-show{
+ display: block; 
+animation: bounce 0.6s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
+}
 
 .feedback-form{
   width: 761px;
@@ -1511,8 +1521,7 @@ min-height: 118px;
 .feedback-form input[type="Текст письма"] {
   font: inherit;
   color: var(--basic-black);
-  text-transform: uppercase;
-  background: #FFFFFF;
+    background: #FFFFFF;
 border: 2px solid #D7DCDE;
 box-sizing: border-box;
 border-radius: 3px;
@@ -1526,7 +1535,7 @@ border-radius: 3px;
 }
 
 .feedback-form input:invalid {
-  background: #FFFFFF;
+background: #FFFFFF;
 border: 2px solid #E74246;
 box-sizing: border-box;
 border-radius: 3px;
@@ -1554,6 +1563,26 @@ color: rgb(255,255,255, 0.3);
 background: #D7373B;
 box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
  }
+
+/* Animations */
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
 
 /* Columns */
 
