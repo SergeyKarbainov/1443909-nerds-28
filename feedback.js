@@ -6,7 +6,6 @@ var Name = Popup.querySelector(".feedback-name");
 var Email = Popup.querySelector(".feedback-email");
 var Letter = Popup.querySelector(".feedback-letter");
 
-
 Buttonfeedback.addEventListener("click", function (evt) {
   evt.preventDefault();
 Popup.classList.add("modal-show");
@@ -40,6 +39,4 @@ Popup.classList.remove("modal-error");
     }
 }
 });
-         
-        
-         
+                  
