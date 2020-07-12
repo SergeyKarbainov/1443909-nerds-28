@@ -197,7 +197,7 @@ opacity: 0.3;
   left: 11px;
   width: 15px;
   height: 15px;
-  background-image: url("img/cart-icon.svg");
+  background-image: url("../img/cart-icon.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -219,7 +219,7 @@ opacity: 0.3;
  min-width: 1157px;
   background-color: #EEEEEE;
   background-repeat: no-repeat;
- background-image: url("img/nerds-index-slide11.png");
+ background-image: url("../img/nerds-index-slide11.png");
 background-position: 100% 100%;
 
  }
@@ -228,7 +228,7 @@ background-position: 100% 100%;
   min-width: 1157px;
   background-color: #EEEEEE;
   background-repeat: no-repeat;
-  background-image: url("img/nerds-index-slide21.png");
+  background-image: url("../img/nerds-index-slide21.png");
   background-position: 100% 100%;
  
  }
@@ -237,7 +237,7 @@ background-position: 100% 100%;
   min-width: 1157px;
   background-color: #EEEEEE;
   background-repeat: no-repeat;
- background-image: url("img/nerds-index-slide31.png");
+ background-image: url("../img/nerds-index-slide31.png");
  background-position: 100% 100%;
  
  }
@@ -757,7 +757,7 @@ text-transform: uppercase;
   left: -38px;
   width: 21px;
   height: 16px;
-  background-image: url("img/shape.svg");
+  background-image: url("../img/shape.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   opacity: 0.4;
