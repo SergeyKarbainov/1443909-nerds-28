@@ -289,7 +289,7 @@ p.slide-title {
 
 .slide-button {
   display: inline-block;
-  vertical-align: baseline;
+  vertical-align;
   padding: 16px 54px;
   margin: 5px 2px;
   color: var(--basic-white);
@@ -1308,6 +1308,10 @@ li.sites-item:first-child:before {
   list-style: none;
 }
 
+.map-1 iframe{
+width: 100%;
+height: 416px;
+}
 
 /* Contacts */
 
